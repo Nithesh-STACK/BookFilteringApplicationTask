@@ -1,5 +1,4 @@
 package com.example.bookfilterapplication
-import com.fasterxml.jackson.annotation.JsonProperty
 
 data class BookData( val author :String="",
                        val country :String="",
