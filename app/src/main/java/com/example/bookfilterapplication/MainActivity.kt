@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val searchButton=findViewById<Button>(R.id.bookButton)
-        val bookData=findViewById<TextView>(R.id.bookSearch)
+        val bookMsg=findViewById<TextView>(R.id.bookSearch)
         val author= findViewById<TextInputLayout>(R.id.authorId).editText?.text
         val country =findViewById<TextInputLayout>(R.id.countryId).editText?.text
         searchButton.setOnClickListener()
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
                     }
-                    bookData.text = "Results : "+count+"\n$myStringData"
+                    bookMsg.text = "Results : "+count+"\n$myStringData"
 
                 }
             }
